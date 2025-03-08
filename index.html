@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(https://files.catbox.moe/j46ysj.ttf);
+}
+
+        body {
+            background-color: #1A1A1A;
+            font-family: myFirstFont;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        #divHello {
+            display: flex;
+            margin: 0;
+            padding: 30px 0;
+            justify-content: center;
+
+        }
+
+        .pp {
+            color: #ccc;
+            margin: 0;
+            padding: 0;
+            width: fit-content;
+            font-size: 50px;
+            animation: fadeInBlur 0.5s ease forwards;
+            opacity: 0;
+        }
+
+        #pContainer {
+           width: 100%;
+           height: 100%;
+           margin: 0;
+           padding: 0 10px;
+           display: flex;
+           flex-direction: column;
+           gap: 10px;
+           box-sizing: border-box;
+
+        }
+
+        .divp {
+            width: auto;
+            height: auto;
+            margin: 0;
+            padding: 10px;
+            border: 1px solid rgba(255,255,255,0.5);
+            border-radius: 5px;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .title {
+            color: antiquewhite;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+        }
+
+        .value {
+            color: aliceblue;
+            margin: 0;
+            padding: 0;
+        }
+
+        #flag {
+            width: 25px;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://files.catbox.moe/s77con.png");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+
+        a {
+            color: aliceblue;
+            margin: 0 2px;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        a:active {
+            opacity: 60%;
+        }
+
+        .ily {
+            cursor: pointer;
+        }
+
+        .ily:active {
+            filter: blur(1px);
+        }
+
+        #smb {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+                height: fit-content;
+                margin: 10px 0;
+                padding: 10px;
+                gap: 10px;
+                box-sizing: border-box;
+            }
+
+            
+            #smb img {
+                width: 30px;
+                height: 30px;
+                object-fit: cover;
+                box-sizing: border-box;
+                background-color: rgba(0,0,0,0.1);
+                padding: 4px;
+                margin: 0;
+                text-decoration: none;
+                border-radius: 10%;
+                opacity: 80%;
+                transition: opacity 0.2s ease;
+                cursor: pointer;
+                filter: invert(100%);
+            }
+
+
+            #smb img:active {
+                opacity: 0.5;
+            }
+
+
+    @keyframes fadeInBlur {
+        0% {
+            opacity: 0;
+            filter: blur(10px);
+        }
+        100% {
+            opacity: 1;
+            filter: blur(0);
+        }
+    }
+
+    .pp:nth-child(1) { animation-delay: 0.5s; }
+    .pp:nth-child(2) { animation-delay: 0.6s; }
+    .pp:nth-child(3) { animation-delay: 0.7s; }
+    .pp:nth-child(4) { animation-delay: 0.8s; }
+    .pp:nth-child(5) { animation-delay: 0.9s; }
+    .pp:nth-child(6) { animation-delay: 1.0s; } /*i can do "1s" but i want smooth line with 0.9 and others :)*/
+</style>
+</head>
+<body>
+    <div id="divHello">
+        <p class="pp">H</p>
+        <p class="pp">e</p>
+        <p class="pp">l</p>
+        <p class="pp">l</p>
+        <p class="pp">o</p>
+        <p class="pp">!</p>
+    </div>
+
+<div id="pContainer">
+
+    <div class="divp">
+        <p class="title">Name:</p>
+        <p class="value">Bader Charaf</p>
+    </div>
+    <div class="divp">
+        <p class="title">BirthDay:</p>
+        <p class="value">26/09/2001</p>
+    </div>
+    <div class="divp">
+        <p class="title">Location:</p>
+        <p class="value">Benslimane</p>
+        <div id="flag"></div>
+    </div>
+    <div class="divp">
+        <p class="title">Lenght:</p>
+        <p class="value">1.82m</p>
+    </div>
+    <div class="divp">
+        <p class="title">Rode Lenght:</p>
+        <p class="value">18.2cm</p>
+    </div>
+    <div class="divp">
+        <p class="title">Weight:</p>
+        <p class="value">64Kg (2022)</p>
+    </div>
+    <div class="divp">
+        <p class="title">Profession:</p>
+        <p class="value">Wasting time</p>
+    </div>
+    <div class="divp">
+        <p class="title">Hobbies:</p>
+        <p class="value">Programming, Development, UI Designing, Rap, BeatMaking, FilmMaking, Welding, Electronics</p>
+    </div>
+    <div class="divp">
+        <p class="title">Languages ​​spoken:</p>
+        <p class="value">Ar, En, Fr, Es</p>
+    </div>
+    <div class="divp">
+        <p class="title">Status:</p>
+        <p class="value">Single </p>
+    </div>
+    <div class="divp">
+        <p class="title">Phobia:</p>
+        <p class="value">Arachnophobia (daddy long legs)</p>
+    </div>
+    <div class="divp">
+        <p class="title">Fav Animes:</p>
+        <p class="value">OnePiece, Death Note, Darling in the Franxx, Promised Neverland, Naruto, Spongebob</p>
+    </div>
+    <div class="divp">
+        <p class="title">Fav Cartoons:</p>
+        <p class="value">Zoro, Batman, Robot Boy, Egyxos, Redakai conquer the Kairu, Gormiti, Ninja Turtles</p>
+    </div>
+    <div class="divp">
+        <p class="title">Fav Music Types:</p>
+        <p class="value">[CTRL+A]</p>
+    </div>
+    <div class="divp">
+        <p class="title">Fav Games:</p>
+        <p class="value">Mobile Legends, Parchisi, 8 Ball Pool, Girls (Just kidding, I swear)</p>
+    </div>
+    <div class="divp">
+        <p class="title">Fav Types Of Girls:</p>
+        <p class="value">Page Not Found</p>
+    </div>
+    <div class="divp">
+        <p class="title">Skills:</p>
+        <p class="value">Java(Android), JavaScript, Bash, HTML, CSS</p>
+    </div>
+    <div class="divp">
+        <p class="title">Fav Songs:</p>
+        <p class="value" onclick="window.open('/favSongs.html')" >CLICK HERE</p>
+    </div>
+    <div class="divp">
+        <p class="title">:</p>
+        <p class="value"></p>
+    </div>
+    <div class="divp">
+        <p class="title">:</p>
+        <p class="value"></p>
+    </div>
+    <div class="divp">
+        <p class="title">:</p>
+        <p class="value"></p>
+    </div>
+    <div class="divp">
+        <p class="title">:</p>
+        <p class="value"></p>
+    </div>
+    <div class="divp">
+        <p class="title">Click</p>
+        <p class="value ily" onclick="alert('I LOVE YOU');">HERE</p>
+    </div>
+    
+</div>
+<div id="smb"></div>
+
+<script>
+
+
+    var src ='https://raw.githubusercontent.com/bcovate/bcovate.github.io/main/';
+    
+    const lm = [{	
+    "link":"https://www.facebook.com/charafbader",
+    "icon":"fb",
+    "alt": "facebook"
+    },{	
+    "link":"https://instagram.com/bader_charaf",
+    "icon":"ig",
+    "alt":"Instagram"
+    },{	
+    "link":"https://twitter.com/bader__charaf",	
+    "icon":"tw",
+    "alt":"Twitter"
+    },{	
+    "link":"https://snapchat.com/add/badrcharaf8",
+    "icon": "sc",
+    "alt":"Snapchat"
+    },{	
+    "link":"https://tiktok.com/@badercharaf",	
+    "icon":"tt",
+    "alt":"Tiktok"
+    },{	
+    "link": "https://t.me/badercharaf",	
+    "icon":"tg",
+    "alt":"Telegram"
+    },{
+    "link":"https://discord.com/users/badercharaf",
+    "icon":"dc",
+    "alt":"Discord"
+    },{
+    "link":"https://youtube.com/@badercharaf",
+    "icon":"ytb",
+    "alt":"Youtube"
+},{
+    "link":"whatsapp://send/?phone=212707585074",
+    "icon":"wa",
+    "alt":"Whatsapp"
+    }];
+    
+    
+            
+    
+      const smb = document.getElementById('smb');
+      
+            lm.forEach(item => {
+    
+                const imgElement = document.createElement('img');
+    
+                imgElement.href = item.link;
+                
+        var iconLink = src + "src/" + item.icon + ".png";
+    
+                imgElement.src = iconLink;
+                
+                imgElement.alt = item.alt;
+    
+        smb.appendChild(imgElement);
+    
+        
+        imgElement.addEventListener('click', () => {
+        window.open(item.link);
+      });
+            });
+      
+            
+            //drag
+            document.addEventListener("dragstart", function(event) {
+if (event.target.tagName.toLowerCase() === "img") {
+event.preventDefault();
+}
+});
+    </script>
+</body>
+</html>
